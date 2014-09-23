@@ -1,0 +1,21 @@
+/* CSS Document */
+
+.login-left { float:left; width:65%; border-right:1px solid #ebebeb; padding:0 20px 0 0; margin-bottom:20px; }
+
+
+.login-left .login_social p { margin-top:-10px; }
+.login-left .login_social ul { list-style:none; padding:0; margin:0  }
+.login-left .login_social ul li { padding:0; margin:0; display:inline-block; margin-right:7px; }
+.login-left .login_social ul li a { display:inline-block; width:26px; height:26px;  }
+
+.login_social {  margin-bottom:20px; }
+
+.login-left .login_social ul li a.fb { background:url(/images/icons/login_fb.png) no-repeat center center }
+.login-left .login_social ul li a.twitter { background:url(/images/icons/login_twitter.png) no-repeat center center }
+.login-left .login_social ul li a.googleplus { background:url(/images/icons/login_google.png) no-repeat center center }
+
+#loginForm {  margin-top:20px; }
+
+
+
+.login-right { float:right; width:35%; padding-left:20px; }

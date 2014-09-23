@@ -1,0 +1,12 @@
+<template name="search">
+  <h1>Search Results{{#if q }} - {{ q }}{{/if}}</h1>
+
+  {{#each results }}
+    <div class="result">
+      <a href="/view/{{ _id }}">{{ name }}</a><br>
+    </div>
+  {{/each}}
+
+  <br>
+  <a href="{{pathFor 'home'}}">Back</a>
+</template>

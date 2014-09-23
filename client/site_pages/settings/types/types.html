@@ -1,0 +1,12 @@
+<template name="settings/types">
+  <a href="/settings/types"><img src="/images/braces.png" alt="" class="headericon"/></a>
+  <h1>Types</h1>
+  Here are some types.
+  <br>
+  {{#each types}}
+    <a href="/settings/types/edit/{{name}}">{{ name }}</a><br>
+  {{/each}}
+  <a href="">+Add New</a>
+
+</template>
+

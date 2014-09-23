@@ -1,0 +1,44 @@
+<template name="login">
+
+  <h1>Login to zzBase</h1>
+
+  <div class="login-left">
+      <div class="login_social">
+          <p>Login using any of your social media account:</p>
+            {{> socialLoginButtons}}
+      </div>
+      <hr />
+      <div class="alert alert-danger" role="alert">{{alert}}</div>
+      <form id="loginForm" name="loginForm">
+
+        <div class="form-row">
+            <label>E-mail Address</label>
+            <input type="text" name="email" id="login-email" />
+        </div>
+        <div class="form-row">
+            <label>Password</label>
+            <input type="password" name="password" id="login-password" />
+       	</div>
+
+        <div class="form-row">
+        	<input type="checkbox" id="remember" class="float" /><label for="remember" class="float">Remember my login credentials on this computer</label>
+            <div class="clear"></div>
+        </div>
+
+        <button class="small">Login</button>
+
+      </form>
+  </div>
+
+  <div class="login-right">
+  	<p>
+    	Don't have an account?<br /> <a href="/register">Sign up now for free  &raquo;</a>
+    </p>
+    <br />
+    <p>
+    	Forgot your password?<br /> <a href="/register">Reset it here  &raquo;</a>
+    </p>
+  </div>
+
+
+</template>

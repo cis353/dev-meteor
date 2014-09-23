@@ -1,0 +1,17 @@
+
+.user-footer {
+	font-size:90%;
+	margin-left:115px;
+	margin-top:10px
+		
+}
+
+.user-footer-left {
+	float:left;
+	width:50%;	
+}
+.user-footer-right {
+	float:right;
+	width:50%;	
+	text-align:right;
+}

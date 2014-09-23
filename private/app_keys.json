@@ -1,0 +1,72 @@
+{
+  "facebook": {
+    "client_id": "625011864281657",
+    "AppSecret": "9de3bc6cc8120daa12a00f4fc923f3bb",
+    "OauthUrl": "https://www.facebook.com/dialog/oauth",
+    "redirect_uri":"https://dev.zzbase.com/facebook/oauthhandler",
+    "scope": "email,publish_actions",
+    "display": "popup"
+  },
+  "twitter": {
+    "AppKey": "oFtRcSDVZdPxnCUCExhTbnRTc",
+    "AppSecret": "bhQlMq8YDM71enMpgzwCOUWfiQcA5WBpF3EhVwZMv676d0tVPy",
+    "OauthUrl": "",
+    "RedirectUrl":"",
+    "scopeOrPermission": ""
+  },
+  "google drive": {
+    "client_id": "887090077504-fb8nqtvt4t528rptkfo4cua4kp1pipuo.apps.googleusercontent.com",
+    "AppSecret": "hLKMioxgs_s5eWhGjy5lld02",
+    "OauthUrl": "https://accounts.google.com/o/oauth2/auth",
+    "redirect_uri":"https://dev.zzbase.com/google/oauthhandler",
+    "scope": "email+profile+https://www.googleapis.com/auth/drive",
+    "access_type": "offline",
+    "approval_prompt": "auto",
+    "response_type": "code"
+  },
+  "gmail": {
+    "client_id": "887090077504-fb8nqtvt4t528rptkfo4cua4kp1pipuo.apps.googleusercontent.com",
+    "AppSecret": "hLKMioxgs_s5eWhGjy5lld02",
+    "OauthUrl": "https://accounts.google.com/o/oauth2/auth",
+    "redirect_uri":"https://dev.zzbase.com/google/oauthhandler",
+    "scope": "email+https://mail.google.com/",
+    "access_type": "offline",
+    "approval_prompt": "auto",
+    "response_type": "code"
+  },
+  "google calendar": {
+    "client_id": "887090077504-fb8nqtvt4t528rptkfo4cua4kp1pipuo.apps.googleusercontent.com",
+    "AppSecret": "hLKMioxgs_s5eWhGjy5lld02",
+    "OauthUrl": "https://accounts.google.com/o/oauth2/auth",
+    "redirect_uri":"https://dev.zzbase.com/google/oauthhandler",
+    "scope": "https://www.googleapis.com/auth/calendar",
+    "access_type": "offline",
+    "approval_prompt": "auto",
+    "response_type": "code"
+  },
+  "dropbox": {
+    "client_id": "tb1iup9uvr0w3qw",
+    "OauthUrl": "https://www.dropbox.com/1/oauth2/authorize",
+    "redirect_uri":"https://dev.zzbase.com/dropbox/oauthhandler",
+    "response_type": "code"
+  },
+  "twilio": {
+    "BasicOauthUrl": "https://api.twilio.com/2010-04-01/Accounts.json",
+    "RedirectUrl": " ",
+    "scopeOrPermission": ""
+  },
+  "stripe": {
+    "BasicOauthUrl": "https://api.stripe.com/v1/charges",
+    "RedirectUrl": " ",
+    "scopeOrPermission": ""
+  },
+  "basecamp": {
+    "client_id": "92deafd2b20b0d8893ca8ec22280fa8785168304",
+    "client_secret": "ae104a4614ab8ba259837b885c3e2f17013a5b9d",
+    "OauthUrl": "https://launchpad.37signals.com/authorization/new",
+    "redirect_uri":"http://localhost:3000/basecamp/oauthhandler",
+    "type": "web_server",
+    "approval_prompt": "auto",
+    "response_type": "code"
+  }
+}

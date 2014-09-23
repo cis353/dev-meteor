@@ -1,0 +1,48 @@
+.user-menu { 
+	float:left;
+	width:115px;
+	padding-top:25px;	
+	
+}
+
+* html .user-menu {
+	
+}
+
+.user-menu ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+	width:115px;
+	margin-right:-1px;	
+}
+
+.user-menu ul li {
+	padding:0;
+	margin:0;
+	text-align:center; 
+	margin-bottom:20px;	
+}
+.user-menu ul li a {
+	display:block;	
+	text-align:center;
+	font-weight:bold;
+	color:#8a8a8a
+}
+
+.user-menu ul li a.active {
+	outline:none;
+	background:url(/images/current-arrow-link.png) no-repeat right center;
+	color:#505050
+}
+
+.user-menu ul li a.active img {
+	/*-webkit-filter: drop-shadow(0px 5px 5px #222);
+    filter:         drop-shadow(0px 5px 5px #222); */
+}
+
+.user-menu ul li a.current img {
+	/*-webkit-box-shadow: 0px 0px 18px 0px rgba(251, 139, 99, 0.75);
+	-moz-box-shadow:    0px 0px 18px 0px rgba(251, 139, 99, 0.75);
+	box-shadow:         0px 0px 18px 0px rgba(251, 139, 99, 0.75);*/
+}

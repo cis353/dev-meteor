@@ -1,0 +1,29 @@
+<template name="app">
+  {{> template app_id }}
+  Test from App Template
+</template>
+
+<template name="appLayout">
+  {{> yield}}
+  {{> editor}}
+</template>
+
+<template name="editor">
+  <div style="position: absolute; bottom: 0; background-color: #dfdfdf; height: 200px; width: 100%; overflow-y: scroll;">
+    {{> code app_id }}
+  </div>
+</template>
+
+<template name="invalidApp">
+  <br>
+  <h1 class="text-center">Not a Valid App</h1>
+  <div class="text-center">
+    Are you the administrator of this domain ({{ domainName }})?<br>
+    If so, you can set up this domain by logging into your <br>
+    zzBase account. :)
+  </div>
+</template>
+
+<template name="noApp">
+  There is no app set up for this domain.
+</template>

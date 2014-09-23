@@ -1,0 +1,21 @@
+.result{
+  width: 100%;
+  background-color: #ffffd8;
+  cursor: pointer;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: #e2d8b1;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.result:hover{
+  background-color: #e0f1fd;
+  border-color: #adc4d9;
+}

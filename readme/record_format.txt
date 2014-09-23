@@ -1,0 +1,10 @@
+{
+  name: 'Contact',
+  type: 'Contact',
+  notes: 'Testing',
+
+  CreatedBy: '',
+  ModifiedBy: '',
+  CreatedDate: '',
+  ModifiedDate: '',
+}

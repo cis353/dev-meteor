@@ -1,0 +1,46 @@
+<template name="header">
+  <div class="row" style="margin-top: 10px;">
+    <div class="col-xs-12 col-sm-4 pull-left" style="margin-bottom: 10px;">
+      <a href="{{pathFor 'home'}}"><img id="logo" src="/images/zzBase_slogan.png" alt="zzBase" style="cursor: pointer"></a>
+    </div>
+
+    {{#if currentUser }}
+    <div class="col-xs-9 col-sm-5 text-center">
+      <div class="input-group" style="margin-top: 8px;">
+        <input type="text" class="form-control" id="q" name="q" placeholder="search..." value="">
+        <span class="input-group-btn">
+          <button id="searchBtn" class="btn btn-default" type="button">Go</button>
+        </span>
+      </div>
+    </div>
+    <div class="col-xs-3 col-sm-3 pull-right">
+      <a class="btn btn-lg btn-warning pull-right" href="/new"><i class="fa fa-plus"></i><span style="display: inline-block;" class="hidden-xs">+ New</span></a>
+    </div>
+    {{else}}
+    <div class="col-xs-12 col-sm-8 pull-right">
+    	<ul class="loginLinks">
+        	<li><a href="/login" class="login">Login</a></li>
+          <li><a href="/register" class="signup">Sign Up</a></li>
+      </ul>
+      <ul class="menuLinks">
+      	<li><a href="/" class="{{active '/'}}">Home</a></li>
+        <li><a href="/screenshots" class="{{active '/screenshots'}}">Screenshots</a></li>
+        <li><a href="/pricing" class="{{active '/pricing'}}">Pricing</a></li>
+        <li><a href="/videos" class="{{active '/videos'}}">Videos</a></li>
+        <li><a href="/support" class="{{active '/support'}}">Support</a></li>
+      </ul>
+      <!--<a id="loginBtn" href="" class="btn btn-large btn-success pull-right"><img src="/images/google-icon.png" width=20 height=20 style="margin-right: 11px; float: left"/>Login with Google</a>-->
+    </div>
+    {{/if}}
+  </div>
+  <hr>
+
+  <!--<div class="btn-group" style="margin-top: 4px; margin-bottom: 14px;">
+    <button class="btn headerBtn">Home</button>
+    <button class="btn headerBtn">Screenshots</button>
+    <button class="btn headerBtn">Pricing</button>
+    <button class="btn headerBtn">Videos</button>
+    <button class="btn headerBtn">Support</button>
+    <button class="btn headerBtn">About Us</button>
+  </div>-->
+</template>

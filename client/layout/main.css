@@ -1,0 +1,289 @@
+/* CSS declarations go here */
+
+/*font - face declaration goes here */
+/*titillium*/
+@font-face {
+    font-family: 'TitilliumText25L400wt';
+    src: url('/fonts/TitilliumText-fontfacekit/TitilliumText25L003-webfont.eot');
+    src: url('/fonts/TitilliumText-fontfacekit/TitilliumText25L003-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/TitilliumText-fontfacekit/TitilliumText25L003-webfont.woff') format('woff'),
+         url('/fonts/TitilliumText-fontfacekit/TitilliumText25L003-webfont.ttf') format('truetype'),
+         url('/fonts/TitilliumText-fontfacekit/TitilliumText25L003-webfont.svg#TitilliumText25L400wt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'TitilliumText25L600wt';
+    src: url('/fonts/TitilliumText-fontfacekit/TitilliumText25L002-webfont.eot');
+    src: url('/fonts/TitilliumText-fontfacekit/TitilliumText25L002-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/TitilliumText-fontfacekit/TitilliumText25L002-webfont.woff') format('woff'),
+         url('/fonts/TitilliumText-fontfacekit/TitilliumText25L002-webfont.ttf') format('truetype'),
+         url('/fonts/TitilliumText-fontfacekit/TitilliumText25L002-webfont.svg#TitilliumText25L600wt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*desyrelregular*/
+@font-face {
+    font-family: 'desyrelregular';
+    src: url('/fonts/desyrel_regular_macroman/desyrel-webfont.eot');
+    src: url('/fonts/desyrel_regular_macroman/desyrel-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/desyrel_regular_macroman/desyrel-webfont.woff') format('woff'),
+         url('/fonts/desyrel_regular_macroman/desyrel-webfont.ttf') format('truetype'),
+         url('/fonts/desyrel_regular_macroman/desyrel-webfont.svg#desyrelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	background:url(/images/bgbody.jpg);
+	font-family:'TitilliumText25L400wt';
+	color:#666;
+	height:100%;
+}
+html, body { height:100%; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+
+#top {
+    position: absolute;
+}
+
+div, span, p, input, select, textarea, ul, li, a, button { box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; } 
+
+#main{
+  margin: 0 auto;
+}
+
+.clear { clear:both }
+
+.standardWidth{
+
+  max-width: 960px;
+  background:#FFF;
+  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 30px 7px rgba(50, 50, 50, 0.5), inset 0px 1px 20px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow:    0px 2px 30px 7px rgba(50, 50, 50, 0.5), inset 0px 1px 20px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         0px 2px 30px 7px rgba(50, 50, 50, 0.5), inset 0px 1px 20px 0px rgba(50, 50, 50, 0.1);
+	overflow:hidden;
+	padding:10px 15px;
+	
+}
+
+#content{
+  min-height: 300px;
+}
+
+.center-760 { max-width:760px; margin:90px auto 0 auto; }
+.center-760 .standardWidth { 
+	width:100%;
+	-webkit-box-shadow: 0px 2px 10px 7px rgba(50, 50, 50, 0.2), inset 0px 1px 20px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow:    0px 2px 10px 7px rgba(50, 50, 50, 0.2), inset 0px 1px 20px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         0px 2px 10px 7px rgba(50, 50, 50, 0.2), inset 0px 1px 20px 0px rgba(50, 50, 50, 0.1);
+	padding:10px 25px;
+}
+
+
+.user-layout { 
+	height:100%;
+	padding:15px 20px 65px 0;
+	
+}
+
+.user-layout .standardWidth { 
+	max-width:none;
+
+	-webkit-box-shadow: 0px 2px 3px 3px rgba(50, 50, 50, 0.2), inset 0px 1px 20px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow:    0px 2px 3px 3px rgba(50, 50, 50, 0.2), inset 0px 1px 20px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         0px 2px 3px 3px rgba(50, 50, 50, 0.2), inset 0px 1px 20px 0px rgba(50, 50, 50, 0.1);
+	min-height:100%;
+	padding:20px;
+	width: auto;
+  	margin-left: 115px;
+	
+}
+
+
+* html .user-layout .standardWidth {
+	height: 100%;
+}
+
+.user-container {
+	width: -moz-calc(100% - 270px);
+    width: -webkit-calc(100% - 270px);
+    width: calc(100% - 270px);
+	float:left;
+	
+	
+}
+.user-container.no-sidebar {
+	width:100%;	
+}
+
+
+#footer-spacer {
+    height: 65px;
+}
+
+hr{
+  height: 1px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-style: none;
+  color: #dddddd;
+  background-color: #dddddd;
+}
+
+h1{
+  color:#565656;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 35px;
+  font-family:'desyrelregular';
+}
+
+h2{
+  font-size: 24px;
+  color: #ff9d00;
+}
+
+/*.user-layout h1{
+  font-size: 25px;
+  font-family:'TitilliumText25L600wt';
+}*/
+
+a{
+  color: #1981ff;
+}
+
+a:hover{
+  color: #ff9a12;
+}
+
+.headericon{
+  float: left;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
+/*form css */
+label { font-weight:normal;  }
+input[type="text"],
+input[type="password"],
+select,
+textarea { padding:0 5px; border:1px solid #d7d7d7; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height:28px; line-height:28px; }
+
+select { padding:3px 5px }
+
+.form-row { margin-bottom:15px; }
+.form-row label { display:block; }
+.form-row input[type="text"],
+.form-row input[type="password"]
+ { display:block; width:320px; }
+ 
+.float { float:left; margin-left:5px; }
+
+/*button.small { font-size:110%; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border:1px solid #e76835; background:url(/images/bg_button_small.png) repeat-x top #f34b07; color:#FFF; text-transform:uppercase; line-height:36px; padding:0 20px; font-weight:bold; text-shadow: 0px 2px 2px rgba(150, 150, 150, 0.5);
+
+	webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.35); 
+	-moz-box-shadow:    0px 3px 5px 0px rgba(0, 0, 0, 0.35); 
+	box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.35);
+  }*/
+
+/*button css */
+button.no-border {
+	border:none;	
+}
+  
+  
+.btn.shadowed {
+	webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.35); 
+	-moz-box-shadow:    0px 3px 5px 0px rgba(0, 0, 0, 0.35); 
+	box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.btn.medium {
+	font-size:120%	
+}
+  
+.btn-custom-darken {
+	text-transform:uppercase;
+	font-weight:bold;
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #df4406;
+	background-image: -moz-linear-gradient(top, #f34a06, #c13b05);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f34a06), to(#c13b05));
+	background-image: -webkit-linear-gradient(top, #f34a06, #c13b05);
+	background-image: -o-linear-gradient(top, #f34a06, #c13b05);
+	background-image: linear-gradient(to bottom, #f34a06, #c13b05);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff34a06', endColorstr='#ffc13b05', GradientType=0);
+	border-color: #c13b05 #c13b05 #772403;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #c13b05;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+		
+}
+
+.btn-custom-darken:hover,
+.btn-custom-darken:focus,
+.btn-custom-darken:active,
+.btn-custom-darken.active,
+.btn-custom-darken.disabled,
+.btn-custom-darken[disabled] {
+  color: #ffffff;
+  background-color: #c13b05;
+  *background-color: #a83304;
+}
+.btn-custom-darken:active,
+.btn-custom-darken.active {
+  background-color: #8f2c04 ;
+}
+  
+/* table css */  
+.table-curved {
+    border-collapse: separate;
+}
+.table-curved {
+    border: solid #ccc 1px;
+    border-radius: 6px;
+    border-left:0px;
+}
+.table-curved td, .table-curved th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.table-curved th {
+    border-top: none;
+	
+	text-transform:uppercase;
+}
+table.table-curved > thead > tr > th {
+	padding:10px;	
+}
+.table-curved > thead > tr > th.th-width-auto {
+	width:1px;	
+}
+.table-curved th:first-child {
+    border-radius: 6px 0 0 0;
+}
+.table-curved th:last-child {
+    border-radius: 0 6px 0 0;
+}
+.table-curved th:only-child{
+    border-radius: 6px 6px 0 0;
+}
+.table-curved tr:last-child td:first-child {
+    border-radius: 0 0 0 6px;
+}
+.table-curved tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
+}
+
+/*listings heading*/
+.listings-heading h1 { float:left; width:80%; }
+.listings-heading .btn-holder { float:right; width:20%; text-align:right; margin-top:20px }
